@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link type="text/css" href="css/style.css" rel="stylesheet" />
+	<script type="text/javascript" src="js/funcs.js"></script>
+	<title>万年历 by孔德群</title>
+</head>
+
+<body onload=initial()>
+	<div style="width:600px;margin:40px auto 0 auto;">
+		<div id="title">
+			<p>中国矿业大学(北京) 2017届 计算机应用技术</p>
+			孔德群 <a href="http://pan.baidu.com/s/1o8muRP4">简历下载</a>
+			<p>邮箱：kdq1231@126.com</p>
+			<p>手机：18811502833</p>	
+		</div>
+		<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td id="date">
+				<select onchange="changeCld()" id="sy">
+					<script type="text/javascript"> 
+					for(var i = 1900;i <= 2049; i++){
+						document.write('<option>' + i + '</option>');
+					} 
+					</script> 
+				</select>
+				年 
+				<select onchange="changeCld()" id="sm">
+					<script type="text/javascript"> 
+					for(var i = 1;i <= 12; i++){
+						document.write('<option>' + i + '</option>');
+					} 
+					</script>
+				</select>
+				月
+				<span id="gz" font-size="10px">&nbsp;</span>
+			</td>
+			<td id="panel" rowspan="2">
+				<div id="datedetail"></div>
+				<div id="clock"></div>
+				<div id="daybig"></div>
+				<div id="gzday"></div>
+				<div id="festival"></div>
+				<div id="buttons">
+					<div id="lastYear" onclick="pushBtm('YU')">上一年↑</div>
+					<div id="nextYear" onclick="pushBtm('YD')">下一年↓</div>
+					<div id="lastMonth" onclick="pushBtm('MU')">上一月↑</div>
+					<div id="nextMonth" onclick="pushBtm('MD')">下一月↓</div>
+					<div id="thisMonth" onclick="pushBtm('')">当前月</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<div id="calendar">
+				<table id="calendarhead" cellspacing="0">
+					<tr> 
+						<td>一</td>
+						<td>二</td>
+						<td>三</td>
+						<td>四</td>
+						<td>五</td>
+						<td>六</td>
+						<td>日</td>
+					</tr>
+				</table>
+				<table id="week" cellpadding="0" cellspacing="0" align="center">
+					<script type="text/javascript">
+						for(var i = 0; i < 6; i++){						
+							document.write('<tr class="tr1">');
+							for(var j = 0; j < 5; j++){
+								var temp = i * 7 + j;
+								document.write('<td class="normalday" onclick = "mClick(' + temp + ')" onmouseover="mOvr(' + temp + ')" id="sd' + temp + '"></td>');
+							}
+							for(var j = 5; j < 7; j++){
+								var temp = i * 7 + j;
+								document.write('<td class="weekend" onclick = "mClick(' + temp + ')" onmouseover="mOvr(' + temp + ')" id="sd' + temp +'"></td>');
+							}
+							document.write('</tr>');
+							document.write('<tr class="tr2">');
+							for(var j = 0; j < 7; j++){
+								var temp = i * 7 + j;
+								document.write('<td id="ld' + temp + '" onclick = "mClick(' + temp + ')" onmouseover="mOvr(' + temp + ')"></td>');
+							}
+						}
+					</script>				
+				</table>
+			</div>
+			</td>
+		</tr>
+		</table>
+	</div>
+</body>
+</html>

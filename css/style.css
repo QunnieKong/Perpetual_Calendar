@@ -1,0 +1,270 @@
+body{
+	margin:0;
+	padding:0;
+	background-color: #282828;
+	}
+#title{
+	text-align: left;
+	font-size:30px;
+	font-family:Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;	
+	padding-top: 0;
+	height:100px;
+}
+#title p{
+	text-align: left;
+	padding:0px;
+	margin:3px;
+}
+#title a{
+	color: #999999;
+	font-size:16px;
+}
+#sy{
+	border:none;
+	font-size:20px;
+	padding-left: 0px;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	}
+#sm{
+	border:none;
+	font-size:20px;
+	padding-left: 0px;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	}
+
+.weekend {
+	font-size: 16px;
+	color: #fe7c50;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	font-weight: bold;
+	}
+
+.normalday {
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	font-size: 16px;
+	color: #000;
+	font-weight: normal;
+	}
+
+.spc {
+	color:#ff5f07;
+	}
+div,p {
+	font-size: 12px;
+	font-weight: normal;
+	color:#999999;
+	text-align: center; 
+	}
+select {
+	font-size: 12px;
+	font-weight: normal;
+	color:#999999;
+	border-radius: 5px;
+	text-align: center; 
+	}
+div#clock{
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	font-size:16px;
+}
+div#daybig{
+	height:90px;
+	width:200px;
+	font-family: Arial, sans-serif;
+	font-size:80px;
+	color:#74ac50;
+}
+div#gzday{
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	font-size:16px;
+}
+div#festival {
+	color: #d8f6f8; 
+	width: 130px; 
+	height:20px;
+	padding: 2px; 
+	margin: 0; 
+	}
+div#datedetail {
+	position: relative;
+	padding-top: 0px;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	font-size:16px;
+	width: 200px;
+	height:30px; 
+	border: 0;  
+	margin: 30;  
+	text-align:center; 
+	}
+div#buttons{
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	font-size:16px;
+	width: 200px;
+	height:130px;
+	}
+div#datedetail span {
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	color: #23460f;
+	}
+div#detail {
+	position: absolute;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	height:300px;
+	padding:0;
+	visibility: hidden;
+	margin: 0;
+	border:1px solid #ffffff;
+	}
+#date {
+	clear:both;
+	color:#ffffff;
+	background-color: #999999;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	padding-top:0;
+	padding-left: 0;
+	width:420px;
+	height:60px;
+	font-size:20px;
+	border: 1px solid #a6a8ab;
+	}
+div#calendar {
+	
+	cursor: pointer;
+	float:left;
+	background-color: #ffffff;
+	text-align:center;
+	width:420px;
+	border: 1px solid #a6a8ab; 
+	border-top:0;
+	height:auto;
+	}
+#calendarhead {
+	color: #757575;
+	border:0;
+	padding:0;
+	margin:0;
+	}
+#calendarhead tr td {
+	width:60px;
+	height:30px;
+	font-weight: bold;
+	font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	font-size:15px;
+	border-right:1px solid #d5d5d3;
+	}
+div#panel {
+	margin:0;
+	padding:0px;
+	float:left;
+	}
+div#panel div {
+	padding:2px;
+	margin-top:10px;
+	background:#e8f5f9;
+	border:0px solid #a6a8ab;
+	font-size:12px;
+	cursor:pointer;
+	}
+#week {
+	border:0;
+	padding:0;
+	margin:0;
+	}
+#week tr{
+	margin:0;
+	border-bottom: 1px solid #d5d5d3;
+	border-left: 1px solid #d5d5d3;
+	}
+#week tr td {
+	margin:0;
+	width:60px;
+	}
+.tr1 td{
+	color:#3d3d3d;
+	align:center;
+	height:30px;
+	font-size:20px;
+	font-family: Arial;
+	padding-top:5px;
+	margin:0;
+	border-right: 1px solid #d5d5d3;
+	border-top:1px solid #d5d5d3;
+	}
+.tr2 td {
+	height:15px;
+	text-align:top;
+	color: #999999;
+	font-family: Arial;
+	font-size: 13px;
+	border-right: 1px solid #d5d5d3;
+	}
+#panel{
+	height:300px;
+	width:100px;
+	background-color: #ffffff;
+	}
+
+div#lastYear{
+	cursor: pointer;
+	margin-left:60px;
+	margin-bottom:6px;
+	padding-top:0px;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	font-size:14px;
+	color: #000000;
+	width:80px;
+	height:20px;	
+	border-radius:5px;
+	background-color: #cdcdcd;
+}
+div#nextYear{
+	cursor: pointer;
+	margin-left:60px;
+	margin-bottom:6px;
+	padding-top:0px;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	font-size:14px;
+	color: #000000;
+	width:80px;
+	height:20px;	
+	border-radius:5px;
+	background-color: #cdcdcd;
+}
+div#lastMonth{
+	cursor: pointer;
+	margin-left:60px;
+	margin-bottom:6px;
+	padding-top:0px;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	font-size:14px;
+	color: #000000;
+	width:80px;
+	height:20px;	
+	border-radius:5px;
+	background-color: #cdcdcd;
+}
+div#nextMonth{
+	cursor: pointer;
+	margin-left:60px;
+	margin-bottom:6px;
+	padding-top:0px;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	font-size:14px;
+	color: #000000;
+	width:80px;
+	height:20px;	
+	border-radius:5px;
+	background-color: #cdcdcd;
+}
+div#thisMonth{
+	cursor: pointer;
+	margin-left:60px;
+	margin-bottom:6px;
+	padding-top:0px;
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+	font-size:14px;
+	color: #000000;
+	width:80px;
+	height:20px;	
+	border-radius:5px;
+	background-color: #cdcdcd;
+}
